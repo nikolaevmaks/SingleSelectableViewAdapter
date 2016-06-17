@@ -1,5 +1,3 @@
-package ru.bringo247.library.view.utils;
-
 import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
 import android.view.View;

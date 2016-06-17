@@ -10,9 +10,11 @@ Uses Haruki Hasegawa's [android-advancedrecyclerview](https://github.com/h6ah4i/
 Create listener
 
 For example:
+
 private final SingleSelectableViewTouchListener singleSelectableTouchListener = new SingleSelectableViewTouchListener();
 
 and set it on views' OnTouchListeners:
+
 viewItem.setOnTouchListener(singleSelectableTouchListener);
 
-That is all)
+That's all)

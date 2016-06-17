@@ -7,20 +7,12 @@ Uses Haruki Hasegawa's [android-advancedrecyclerview](https://github.com/h6ah4i/
 
 ##How to use
 
-Simple inherit your RecyclerView adapter from SingleSelectableViewAdapter and
-set SingleSelectableViewAdapter's OnTouchListener implementation as holder view's OnTouchListener.
+Create listener
 
-```java
-private class ExtendedSingleSelectableViewAdapter extends SingleSelectableViewAdapter {
+For example:
+private final SingleSelectableViewTouchListener singleSelectableTouchListener = new SingleSelectableViewTouchListener();
 
-  ...
-  
-  class ViewHolder extends RecyclerView.ViewHolder {
-    ViewHolder(View view) {
-      view.setOnTouchListener(ExtendedSingleSelectableViewAdapter.this);
-    }
-  }
-}
-```
+and set it on views' OnTouchListeners:
+viewItem.setOnTouchListener(singleSelectableTouchListener);
 
-May be used with ListViews if we use item's OnTouchListener instead of OnItemClickListener with small changes.
+That is all)
